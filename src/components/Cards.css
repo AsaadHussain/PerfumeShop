@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background: #fee1f2;
   }
   
   h1 {
@@ -19,6 +19,7 @@
   .cards__wrapper   {
     position: relative;
     margin: 50px 0 45px;
+    width: 100%;
   }
   
   .cards__items {
@@ -30,6 +31,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    background-color: #fff;
   }
   
   .cards__item__link {

@@ -31,7 +31,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        PerfumeShop <i class="fa-solid fa-spray-can-sparkles" />
+                        PerfumeShop&nbsp;<i class="fa-solid fa-spray-can-sparkles" />
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? "fa-solid fa-x" : "fa-solid fa-bars"} />
@@ -44,13 +44,13 @@ function Navbar() {
                             <Link to="/products" className="nav-links" onClick={closeMobileMenu}>Products</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services</Link>
+                            <Link to="/categories" className="nav-links" onClick={closeMobileMenu}>Categories</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>Sign Up</Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+                    {button && <Button path="/sign-up" buttonStyle="btn--outline" buttonSize="btn--medium">SIGN UP</Button>}
                 </div>
             </nav>
         </>
